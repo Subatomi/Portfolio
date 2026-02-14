@@ -50,7 +50,7 @@ export default function Contact() {
                         <path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
                     </div>
 
-                    <div className="flex flex-col w-full bg-red-200 h-2xl text-left sm:text-2xl text-lg  ">
+                    <div className="flex flex-col w-full h-2xl text-left sm:text-2xl text-lg  ">
                         <h2 data-animation="fade-in" className="sm:text-4xl font-bold mb-2 :text-2xl">Designed and Developed by </h2>
                         <h3 data-animation="fade-in" className="">{config.developer.fullname}</h3>
                         
