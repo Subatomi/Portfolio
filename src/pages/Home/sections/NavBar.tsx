@@ -1,17 +1,18 @@
 import { motion } from "motion/react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
     return (
         <ul className="nav-ul  ">
             <li className="nav-li">
-                <a className="nav-link" href="#about">ABOUT</a>
+                <Link className="nav-link" to="/about">ABOUT</Link>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#works">WORKS</a>
+                <Link className="nav-link" to="/MyWorks">WORKS</Link>
             </li>
             <li className="nav-li">
-                <a className="nav-link" href="#contact">CONTACT</a>
+                <Link className="nav-link" to="/contact">CONTACT</Link>
             </li>
         </ul>
     );
@@ -22,7 +23,7 @@ export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg  bg-primary/40 p-6 sm:p-4">
+        <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40 p-6 sm:p-4">
             <div className="mx-auto c-space max-w-7xl flex items-center justify-between py-2 sm:py-0">
                 <a className="text-xl font-bold transition-colors text-neutral-400 hover:text-white" href="/">LOGO</a>
                 <button

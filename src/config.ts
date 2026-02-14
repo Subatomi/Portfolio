@@ -16,44 +16,64 @@ export const config = {
     },
     achievements:[
         {
-            id: 5,
+            id: 6,
             title: "13th TOPCIT Level III Industry Standard",
             fulltitle:"Level III Industry Standard - 13th Test of Practical Competency in IT. (TOPCIT)",
-            date: "Jan 2026",
-            description: "Maintained my Level III Industry Standard in the 13th Test of Practical Competency in IT (TOPCIT)"
+            month: "January",
+            year: "2026",
+            description: "Maintained my Level III Industry Standard in the 13th Test of Practical Competency in IT (TOPCIT)",
+            link:"",
         },
 
         {
-            id: 4,
+            id: 5,
             title: "AWS Cloud Architecting - Training Badge",
             fulltitle:"AWS Academy Graduate - Cloud Architecting - Training Badge", 
-            date: "Sep 2025",
-            description: "Achieved AWS Academy Graduate - Cloud Architecting - Training Badge, demonstrating a solid foundation in cloud computing architecting and practices."
+            month: "September",
+            year: "2025",
+            description: "Achieved AWS Academy Graduate - Cloud Architecting - Training Badge, demonstrating a solid foundation in cloud computing architecting and practices.",
+            link:"",
         },
         
         {
-            id: 3,
+            id: 4,
             title: "PhilNITS FE Certification",
             fulltitle:"PhilNITS Fundamental Information Technology Engineers (FE) Certification",
-            date: "Nov 2025",
-            description: "Achieved PhilNITS Fundamental Information Technology Engineers (FE) Certification, demonstrating a solid foundation in information technology principles and practices."
+            month: "November",
+            year: "2025",
+            description: "Achieved PhilNITS Fundamental Information Technology Engineers (FE) Certification, demonstrating a solid foundation in information technology principles and practices.",
+            link:"",
+        },
+
+        {
+            id: 3,
+            title: "AWS Cloud Foundations - Training Badge",
+            fulltitle:"AWS Academy Graduate - Cloud Foundations - Training Badge",
+            month: "November",
+            year: "2025",
+            description: "Achieved AWS Academy Graduate - Cloud Foundations - Training Badge, demonstrating a solid foundation in cloud.",
+            link:"",
         },
 
         {
             id: 2,
-            title: "AWS Cloud Foundations - Training Badge",
-            fulltitle:"AWS Academy Graduate - Cloud Foundations - Training Badge",
-            date: "Nov 2025",
-            description: "Achieved AWS Academy Graduate - Cloud Foundations - Training Badge, demonstrating a solid foundation in cloud."
+            title: "12th TOPCIT Level III Industry Standard",
+            fulltitle:"Level III Industry Standard - 12th Test of Practical Competency in IT. (TOPCIT)",
+            month: "July",
+            year: "2025",
+            description: "Achieved Level III Industry Standard in the 12th Test of Practical Competency in IT (TOPCIT), for the first time.",
+            link:"",
         },
 
         {
             id: 1,
-            title: "12th TOPCIT Level III Industry Standard",
-            fulltitle:"Level III Industry Standard - 12th Test of Practical Competency in IT. (TOPCIT)",
-            date: "Jul 2025",
-            description: "Achieved Level III Industry Standard in the 12th Test of Practical Competency in IT (TOPCIT), for the first time."
-        },
+            title: "DOST-SEI Scholarship",
+            fulltitle:"Department of Science and Technology - Science Education Institute (DOST-SEI) Scholarship",
+            month: "February",
+            year: "2022",
+            description: "Recipient of the DOST–SEI Scholarship, awarded based on successful qualification and evaluation.",
+            link:"",
+        }
     ],
     projects:[
         {
@@ -61,27 +81,63 @@ export const config = {
             title: "Probability Bomber",
             category: ["Web Development", "Gamification", "EdTech", "School Project"],
             technologies: ["React Js", "PhaserJS", "Firebase Authentication and Database", "HTML", "CSS", "Tailwind"],
-            image: "", 
-            description: "A Bomberman‑inspired gamified platform that teaches probability through interactive gameplay. Players solve level‑based challenges using point scoring, power‑ups, and real-time feedback, which reinforces concepts and motivates continued practice.",
+            image: [
+                "./assets/works-images/pb_bomber_1.png",
+                "./assets/works-images/pb_bomber_2.png", 
+                "./assets/works-images/pb_bomber_3.png",
+                "./assets/works-images/pb_bomber_4.png", 
+                "./assets/works-images/pb_bomber_5.png",
+            ],
+            description: "A Bomberman‑inspired platform that teaches probability through interactive, level-based gameplay. Players solve challenges using point scoring and power-ups. Real-time feedback reinforces concepts and motivates practice.",
             link: "",
+            repoLink: "",
         },
         {
             id: 2,
             title: "SkillStacker",
             category: ["Web Development", "Internship Project"],
             technologies: ["C#", ".NET 6.0", "Razor Pages", "Tailwind CSS", "Entity Framework Core", "SQL Server (SSMS)"],
-            image: "",
-            description: "SkillStacker is an admin-side C# web application built for Alliance Software Inc.'s Summer Bridge Program. It provides administrators with CRUD management for users, training categories, trainings, and training topics. The project uses .NET 6.0 with Razor Pages for UI, Tailwind for styling, Entity Framework Core for data access, and SQL Server (SSMS) for the database. Key features include login, password reset/change, user master screens (list/add/edit/delete/view), training category management, trainings and topic management (list/add/edit/delete/view), search and view training, and training rating. Scope: admin-side only, implemented per provided functional specifications.",
+            image: [
+                "./assets/works-images/ss_1.png",
+                "./assets/works-images/ss_2.png",
+                "./assets/works-images/ss_3.png",
+                "./assets/works-images/ss_4.png",
+                "./assets/works-images/ss_5.png",
+            ],
+            description: "An admin-side web app for managing users, trainings and categories. Built with C#, .NET 6, Razor Pages and Tailwind. Provides CRUD interfaces and admin workflows for training management.",
             link: "",
+            repoLink: "",
         },
         {
             id: 3,
             title: "Litterbox",
             category: ["Web Development", "School Project"],
             technologies: ["Django", "Python", "Tailwind CSS", "SQLite", "JavaScript", "TinyMCE", "FullCalendar"],
-            image: "",
-            description: "Litterbox is a student blog management system that empowers students to create, share, and interact through blog posts. Core features include secure user authentication (register, login, email verification, password reset), profile management, full CRUD for posts with categories and tags, search/filter/sort, commenting with replies and likes, calendar events and reminders, and admin tools for moderation.",
+            image: [
+                "./assets/works-images/lb.gif",
+            ],
+            description: "A student blog platform for creating, sharing and interacting through posts. Includes authentication, profile management, and full CRUD for posts with categories and tags. Supports comments, search and calendar events.",
             link: "",
+            repoLink: "",
+        },
+        
+        {
+            id: 6,
+            title: "TechnoSpace",
+            category: ["Web Development", "School Project"],
+            technologies: ["ASP.NET", "ReactJS", "Azure", "MySQL", "HTML", "CSS", "Tailwind", "Bootstrap"],
+            image: [
+                "./assets/works-images/ts_1.png",
+                "./assets/works-images/ts_2.png",
+                "./assets/works-images/ts_3.png",
+                "./assets/works-images/ts_4.png",
+                "./assets/works-images/ts_5.png",
+                "./assets/works-images/ts_6.png",
+                "./assets/works-images/ts_7.png",
+            ],
+            description: "An online marketplace for students and faculty to buy and sell campus items. Features user authentication, product categorization and responsive design. Focuses on sustainable reuse within the campus community.",
+            link: "",
+            repoLink: "",
         },
         
         {
@@ -89,9 +145,14 @@ export const config = {
             title: "Space Horizon",
             category: ["Game", "School Project"],
             technologies: ["Java"],
-            image: "",
+            image: [
+                "./assets/works-images/sh_1.png",
+                "./assets/works-images/sh_2.png",
+                "./assets/works-images/sh_3.png",
+            ],
             description: "A retro-style Java shooting game inspired by classic Air Force arcade titles. Players face waves of enemies by shooting and dodging enemy attacks",
             link: "",
+            repoLink: "",
         },
         
         {
@@ -99,19 +160,15 @@ export const config = {
             title: "BuriedBornes",
             category: ["Game", "School Project"],
             technologies: ["Java"],
-            image: "",
-            description: "A Java-only game RPG inspired by BuriedBornes: a turn-based game where players battle enemies endlessly until they exit or their character dies.",
+            image: [
+                "./assets/works-images/bb_1.png",
+                "./assets/works-images/bb_2.png",
+                "./assets/works-images/bb_3.png",
+            ],
+            description: "A Java RPG inspired by BuriedBornes with turn-based combat. Players battle enemies and progress until exit or defeat. Focuses on endless combat mechanics and progression.",
             link: "",
+            repoLink: "",
         },
-        {
-            id: 6,
-            title: "TechnoSpace",
-            category: ["Web Development", "School Project"],
-            technologies: ["ASP.NET", "ReactJS", "Azure", "MySQL", "HTML", "CSS", "Tailwind", "Bootstrap"],
-            image: "",
-            description: "A dedicated online marketplace for students and faculty of Cebu Institute of Technology–University. Users can post items, browse listings, negotiate prices, and manage transactions within a trusted campus community. Features include product categorization, user authentication, responsive design, and a focus on sustainable reuse of items.",
-            link: "",
-        }
     ],
     contact:{
         email: "theodoreladera.tl@gmail.com",

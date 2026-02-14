@@ -1,28 +1,55 @@
 import { useEffect } from "react";
 import {tech} from "./config/tech-url"
 import ItemBox from "./components/item-box";
+import useTextAnimation from "../components/TextAnimation"
+
 export default function TechStack() {
+    useTextAnimation();
     useEffect(() => {
 
         }, [])
 
     return (
-        <div className="w-full h-fit mt-20 justify-between  p-20 gap-20 flex  ">
-            <div className="flex flex-col h-full justify-items-start">
-                <h1 className="text-5xl font-untitledSans font-bold text-left mb-10">About Me</h1>
+        <div className="max-w-screen h-full mt-20 grid grid-cols-1 lg:grid-cols-2 justify-between sm:p-20 gap-20 ">
+            <div className="flex flex-col justify-around w-full">
+                <div className="flex flex-col h-full justify-items-start">
+                    <h1 data-animation="fade-in" className="text-5xl font-untitledSans font-bold text-left mb-10">About Me</h1>
 
-                <p className="text-white/70">
-                    My journey in programming started in high school where i was fascinated of web scraping from an application in github and my interest in the web and gaming. Since starting college I worked on personal projects from web development to machine learning modes. As i strive to always learn and grow.
-                    <br/><br/>
-                    Currently pursuing my Bachelors degree in Computer Science at Cebu Institute of Technology-University as DOST scholar in 2022 and hopefully graduating this month in May 2026.
-                </p>
+                    <p  data-animation="fade-in"  className="text-white/70">
+                        Hello! You can call me Theo. <br/><br/>
+                        I’m a Computer Science student with interests in Web & Mobile Development and AI/Machine Learning. I face challenging problems and continuously improve my technical skills. I’m known for adapting quickly, learning efficiently, and staying persistent when faced with difficult tasks.<br/><br/>
+
+                        My programming journey began in high school, driven by curiosity about web technologies and gaming after exploring applications and projects from GitHub. This early exposure sparked my interest in how software works under the hood and motivated me to pursue Computer Science.<br/><br/>
+
+                        I am currently pursuing a Bachelor of Science in Computer Science at Cebu Institute of Technology-University, a DOST-SEI Scholarship recipient since 2022, and I am on track to graduate in May 2026.
+                    </p>
+                </div>
+
+                <div className="flex flex-col h-fit justify-items-start mt-10 ">
+                    <h1 data-animation="fade-in" className="text-5xl font-untitledSans font-bold text-left mb-10">What I Strive For</h1>
+                    <div className="flex flex-row flex-wrap justify-center">
+                        <div data-animation="slide-in-left" data-delay="0.8" className="flex flex-col gap-2 max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg mr-2 rotate-12 z-1">
+                            <h2 className="font-bold mb-2 text-center">Collaborative</h2>
+                            <p className="text-white/70">Strong team player and adaptability in collaborative environments.</p>
+                        </div>
+                        <div data-animation="slide-in-left"  data-delay="0.6" className="flex flex-col gap-2  max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg mr-2 z-2 -rotate-10">
+                            <h2 className="font-bold mb-2 text-center">Problem Solver</h2>
+                            <p className="text-white/70">Find solutions to complex problems and technical challenges.</p>
+                        </div>
+                        <div data-animation="slide-in-left"  data-delay="0.4" className="flex flex-col gap-2  max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg z-3 rotate-11">
+                            <h2 className="font-bold mb-2 text-center">Learner</h2>
+                            <p className="text-white/70">Continuously seeking knowledge and improving skills in various domains.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+           
 
-            <div className="flex w-full flex-col gap-4">
-                <h1 className="text-5xl font-untitledSans font-bold text-left mb-10">Technical Skills</h1>
-                <div className="flex flex-col">
-                    <h2 className="font-bold mb-2">Frontend</h2>
-                    <div className="flex flex-row w-full gap-4 flex-wrap">
+            <div  className="flex flex-col gap-4 items-center w-full">
+                <h1 data-animation="fade-in" className="text-5xl font-untitledSans font-bold text-center sm:text-left my-10">Technical Stack</h1>
+                <div data-animation="fade-in" className="flex flex-col">
+                    <h2 className="font-bold mb-2 text-center sm:text-left">Frontend</h2>
+                    <div className="justify-center sm:justify-around flex flex-row w-full gap-4 flex-wrap">
                         {Object.values(tech).slice(0,6).map((tech) => (
                             <ItemBox link={tech.link} name={tech.name} logo={tech.logo} />
                         ))}
@@ -30,9 +57,9 @@ export default function TechStack() {
                 </div>
 
                 
-                <div className="flex flex-col">
-                    <h2 className="font-bold mb-2">Backend</h2>
-                    <div className="flex flex-row w-full gap-4 flex-wrap">
+                <div data-animation="fade-in" className="flex flex-col">
+                    <h2 className="font-bold mb-2 text-center sm:text-left">Backend</h2>
+                    <div className="justify-center flex flex-row w-full gap-4 flex-wrap">
                         {Object.values(tech).slice(6,9).map((tech) => (
                             <ItemBox link={tech.link} name={tech.name} logo={tech.logo} />
                         ))}
@@ -40,9 +67,9 @@ export default function TechStack() {
                 </div>
 
                 
-                <div className="flex flex-col">
-                    <h2 className="font-bold mb-2">Databases</h2>
-                    <div className="flex flex-row w-full gap-4 flex-wrap">
+                <div data-animation="fade-in"className="flex flex-col">
+                    <h2 className="font-bold mb-2 text-center sm:text-left">Databases</h2>
+                    <div className="justify-center flex flex-row w-full gap-4 flex-wrap">
                         {Object.values(tech).slice(9,12).map((tech) => (
                             <ItemBox link={tech.link} name={tech.name} logo={tech.logo} />
                         ))}
@@ -50,9 +77,9 @@ export default function TechStack() {
                 </div>
 
                 
-                <div className="flex flex-col">
-                    <h2 className="font-bold mb-2">Tools</h2>
-                    <div className="flex flex-row w-full gap-4 flex-wrap">
+                <div data-animation="fade-in" className="flex flex-col pb-0 sm:pb-20 ">
+                    <h2 className="font-bold mb-2 text-center sm:text-left">Tools</h2>
+                    <div className="justify-center flex flex-row w-full gap-4 flex-wrap">
                         {Object.values(tech).slice(12,15).map((tech) => (
                             <ItemBox link={tech.link} name={tech.name} logo={tech.logo} />
                         ))}

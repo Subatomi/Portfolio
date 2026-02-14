@@ -1,8 +1,59 @@
+import { config } from "../../config"
+import NavBar from "../Home/sections/NavBar"
+import ImageGrid from "../Home/sections/components/ImageGrid"
+
 export default function MyWork() {
   return (
-    <main className="flex flex-col items-center justify-center h-screen">
+    <div className="lenis flex flex-col w-full min-h-[100dvh] mx-5 scroll-smooth">
+      <NavBar />
+      <div className="mt-16 px-5 py-10 w-full">
+        <div className="w-full text-center h-full mb-8 pb-2 border-b-2 border-gray-600">
+          <h1 className="text-8xl font-bold">My Works</h1>
+          <h4>Showing {config.projects.length} projects</h4>
+        </div>
 
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {config.projects.map((project, index) => (
+            <div
+              key={project.id || index}
+              className="panel max-w-2xl w-full h-full shrink-0 flex flex-col justify-between px-5 py-6"
+            >
+              <div className="flex justify-between w-full mb-5 items-start">
+                <h3 className="text-4xl font-bold">{`0${index + 1}`}</h3>
+                <div className="text-right">
+                  <h4 className="text-2xl font-bold">{project.title}</h4>
+                  <p className="text-sm text-white/60 font-extralight">{project.category}</p>
+                </div>
+              </div>
 
-    </main>
+              <ImageGrid project={project} isHome={false} />
+
+              <div className="mt-5">
+                <p className="text-sm text-right text-white/70">{project.description}</p>
+              </div>
+
+              <div className="flex justify-end gap-5 mt-5 w-full">
+                <a
+                  href={project.repoLink || project.link}
+                  className="text-sm font-bold border-b-2 border-gray-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Repo
+                </a>
+                <a
+                  href={project.link}
+                  className="text-sm font-bold border-b-2 border-gray-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }
