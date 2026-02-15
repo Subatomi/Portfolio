@@ -68,7 +68,7 @@ export default function InitialPage() {
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className="w-full pl-8 sm:pl-0 sm:max-w-md aspect-square">
+                <div className="w-full pl-8 sm:pl-0 max-w-md sm:max-w-2xl aspect-square">
                     <Spline
                         scene={sceneUrl}
                         onSplineMouseDown={onSplineMouseDown}

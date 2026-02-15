@@ -4,7 +4,7 @@ import ImageGrid from "../Home/sections/components/ImageGrid"
 
 export default function MyWork() {
   return (
-    <div className="lenis flex flex-col w-full min-h-[100dvh] mx-5 scroll-smooth">
+    <div className="flex flex-col w-full min-h-screen scroll-smooth">
       <NavBar />
       <div className="mt-16 px-5 py-10 w-full">
         <div className="w-full text-center h-full mb-8 pb-2 border-b-2 border-gray-600">
