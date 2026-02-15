@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import LogoWhite from "/assets/LogoWhite.svg?url";
 
 type NavigationProps = {
     onNavigateTo: (id: string) => void;
@@ -42,9 +43,16 @@ export default function NavBar() {
         <div className="fixed inset-x-0 z-100 w-full backdrop-blur-lg bg-primary/40 p-6 sm:p-4">
             <div className="mx-auto c-space max-w-7xl flex items-center justify-between py-2 sm:py-0">
                 
-                <a className="text-xl font-bold transition-colors text-neutral-400 hover:text-white" href="/Home">
-                    <img src="public/assets/LogoWhite.svg" alt="Logo" className="text-white w-8 h-8 mr-2" />
-                </a>
+                <Link 
+                    to="/Home" 
+                    className="text-xl font-bold transition-opacity hover:opacity-80"
+                >
+                    <img 
+                        src={LogoWhite} 
+                        alt="Logo" 
+                        className="w-8 h-8" 
+                    />
+                </Link>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"

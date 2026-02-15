@@ -30,14 +30,12 @@ export default function Hero() {
                     </div>
 
                     <div className="relative h-full flex flex-col items-center justify-center ">
-                        <h3 className="text-left text-3xl pl-3 font-untitledSans font-bold">An</h3>
                         <div className="relative text-xl md:text-4xl">
-                            <h2>
-                                <div className="text-left z-20 w-full font-untitledSans font-bold  bg-gradient-to-b from-red-700 to-neutral-800 bg-clip-text text-transparent text-wrap -translate-y-3">AI ENGINEER</div>
-                            </h2>
+                            
+                            <h3 className="pl-10 text-left text-3xl font-untitledSans font-bold">A</h3>
                             <h2>
                                 <TextRevealLeft delay={1} stagger={0.2} animateOnScroll={false}>
-                                <div className=" text-left pl-4 font-untitledSans font-bold -translate-y-9">FullStack Developer</div>
+                                <div className=" text-left pl-4 font-untitledSans font-bold ">FullStack Developer</div>
                                 </TextRevealLeft>
                             </h2>
                         </div>
@@ -46,12 +44,10 @@ export default function Hero() {
 
                 <div className=" flex sm:hidden flex-col w-full items-center ">
                     <h2>
-                        <div className="text-left z-20 w-full font-untitledSans font-bold  bg-gradient-to-b from-red-700 to-neutral-800 bg-clip-text text-transparent text-wrap ">AI ENGINEER</div>
-                    </h2>
-
-                    <h2>
                         <TextRevealLeft delay={1} stagger={0.2} animateOnScroll={false}>
-                        <div className=" text-left pl-4 font-untitledSans font-bold -translate-y-3">FullStack Developer</div>
+                            <div className=" text-left pl-4 font-untitledSans font-bold -translate-y-3">
+                                FullStack Developer
+                            </div>
                         </TextRevealLeft>
                     </h2>
                 </div>
