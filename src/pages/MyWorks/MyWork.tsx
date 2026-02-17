@@ -1,6 +1,7 @@
 import { config } from "../../config"
 import NavBar from "../Home/sections/NavBar"
 import ImageGrid from "../Home/sections/components/ImageGrid"
+import LinkDisplay from "../Home/sections/components/LinkDisplay"
 
 export default function MyWork() {
   return (
@@ -33,22 +34,7 @@ export default function MyWork() {
               </div>
 
               <div className="flex justify-end gap-5 mt-5 w-full">
-                <a
-                  href={project.repoLink || project.link}
-                  className="text-sm font-bold border-b-2 border-gray-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Repo
-                </a>
-                <a
-                  href={project.link}
-                  className="text-sm font-bold border-b-2 border-gray-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project
-                </a>
+                  <LinkDisplay link={project.link} repoLink={project.repoLink} />
               </div>
             </div>
           ))}

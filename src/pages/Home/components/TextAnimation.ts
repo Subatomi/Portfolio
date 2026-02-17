@@ -38,7 +38,7 @@ export default function useTextAnimation() {
                     
                     gsap.fromTo(element, {
                         opacity: 0,
-                        x: -100
+                        x: -50
                     }, {
                         opacity: 1,
                         x: 0,

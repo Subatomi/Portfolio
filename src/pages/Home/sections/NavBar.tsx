@@ -30,13 +30,13 @@ export default function NavBar() {
     const location = useLocation();
 
     function scrollToId(id: string) {
-        if (location.pathname === '/' || location.pathname === '/Home') {
+        if (location.pathname === '/') {
             const el = document.getElementById(id);
             if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             return;
         }
 
-        navigate('/Home', { state: { scrollTo: id } });
+        navigate('/', { state: { scrollTo: id } });
     }
 
     return (
@@ -44,7 +44,7 @@ export default function NavBar() {
             <div className="mx-auto c-space max-w-7xl flex items-center justify-between py-2 sm:py-0">
                 
                 <Link 
-                    to="/Home" 
+                    to="/" 
                     className="text-xl font-bold transition-opacity hover:opacity-80"
                 >
                     <img 

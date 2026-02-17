@@ -77,9 +77,25 @@ export const config = {
     ],
     projects:[
         {
+            
             id: 1,
+            title: "Portfolio Website",
+            category: ["Web Development / Personal Project"],
+            technologies: ["Vite", "React", "TypeScript", "Tailwind CSS", "PhaserJS", "Firebase Authentication & Realtime Database", "Vercel"],
+            image: [
+                "./assets/works-images/p_1.png",
+                "./assets/works-images/p_2.png",
+                "./assets/works-images/p_3.png",
+                "./assets/works-images/p_4.png",
+            ],      
+            description: "Personal portfolio website built with React and Vite. Showcases projects, interactive demos (PhaserJS), and a responsive, accessible UI. Includes animated reveals, image lightbox, client-side routing, and contact links. Deployed on Vercel.",
+            link: "",
+            repoLink: ["https://github.com/Subatomi/subatomi-portfolio"],
+        },
+        {
+            id: 2,
             title: "Probability Bomber",
-            category: ["Web Development", "Gamification", "EdTech", "School Project"],
+            category: ["Web Development / Gamification / EdTech"],
             technologies: ["React Js", "PhaserJS", "Firebase Authentication and Database", "HTML", "CSS", "Tailwind"],
             image: [
                 "./assets/works-images/pb_bomber_1.png",
@@ -89,13 +105,13 @@ export const config = {
                 "./assets/works-images/pb_bomber_5.png",
             ],
             description: "A Bomberman‑inspired platform that teaches probability through interactive, level-based gameplay. Players solve challenges using point scoring and power-ups. Real-time feedback reinforces concepts and motivates practice.",
-            link: "",
-            repoLink: "",
+            link: "https://probabilitybomberfrontend.onrender.com",
+            repoLink: ["https://github.com/zyle-geralde/ProbabilityBomberFrontEnd", "https://github.com/avrilnigelchua0412/Probability-Bomber-Backend"],
         },
         {
-            id: 2,
+            id: 3,
             title: "SkillStacker",
-            category: ["Web Development", "Internship Project"],
+            category: ["Web Development / Internship Project"],
             technologies: ["C#", ".NET 6.0", "Razor Pages", "Tailwind CSS", "Entity Framework Core", "SQL Server (SSMS)"],
             image: [
                 "./assets/works-images/ss_1.png",
@@ -106,25 +122,25 @@ export const config = {
             ],
             description: "An admin-side web app for managing users, trainings and categories. Built with C#, .NET 6, Razor Pages and Tailwind. Provides CRUD interfaces and admin workflows for training management.",
             link: "",
-            repoLink: "",
+            repoLink: ["Privated"],
         },
         {
             id: 3,
             title: "Litterbox",
-            category: ["Web Development", "School Project"],
+            category: ["Web Development / School Project"],
             technologies: ["Django", "Python", "Tailwind CSS", "SQLite", "JavaScript", "TinyMCE", "FullCalendar"],
             image: [
                 "./assets/works-images/lb.gif",
             ],
             description: "A student blog platform for creating, sharing and interacting through posts. Includes authentication, profile management, and full CRUD for posts with categories and tags. Supports comments, search and calendar events.",
             link: "",
-            repoLink: "",
+            repoLink: ["https://github.com/rei-naissance/Litterbox"],
         },
         
         {
-            id: 6,
+            id: 4,
             title: "TechnoSpace",
-            category: ["Web Development", "School Project"],
+            category: ["Web Development / School Project"],
             technologies: ["ASP.NET", "ReactJS", "Azure", "MySQL", "HTML", "CSS", "Tailwind", "Bootstrap"],
             image: [
                 "./assets/works-images/ts_1.png",
@@ -137,13 +153,13 @@ export const config = {
             ],
             description: "An online marketplace for students and faculty to buy and sell campus items. Features user authentication, product categorization and responsive design. Focuses on sustainable reuse within the campus community.",
             link: "",
-            repoLink: "",
+            repoLink: ["https://github.com/zyle-geralde/TechnoSpaceFrontEnd", "Privated"],
         },
         
         {
-            id: 4,
+            id: 5,
             title: "Space Horizon",
-            category: ["Game", "School Project"],
+            category: ["Game / School Project"],
             technologies: ["Java"],
             image: [
                 "./assets/works-images/sh_1.png",
@@ -152,13 +168,13 @@ export const config = {
             ],
             description: "A retro-style Java shooting game inspired by classic Air Force arcade titles. Players face waves of enemies by shooting and dodging enemy attacks",
             link: "",
-            repoLink: "",
+            repoLink: ["Privated"],
         },
         
         {
-            id: 5,
+            id: 6,
             title: "BuriedBornes",
-            category: ["Game", "School Project"],
+            category: ["Game / School Project"],
             technologies: ["Java"],
             image: [
                 "./assets/works-images/bb_1.png",
@@ -167,7 +183,7 @@ export const config = {
             ],
             description: "A Java RPG inspired by BuriedBornes with turn-based combat. Players battle enemies and progress until exit or defeat. Focuses on endless combat mechanics and progression.",
             link: "",
-            repoLink: "",
+            repoLink: ["https://github.com/MeepMe3p/BuriedBornes-Capstone-CSIT227-F2"],
         },
     ],
     contact:{
