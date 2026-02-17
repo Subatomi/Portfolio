@@ -4,6 +4,7 @@ import { useEffect} from "react"
 import { config } from "../../../config"
 import ImageGrid from "./components/ImageGrid"
 import { Link } from "react-router-dom"
+import LinkDisplay from "./components/LinkDisplay"
 
 export default function Works() {
 
@@ -92,9 +93,8 @@ export default function Works() {
                             <p className="text-sm mt-5 text-left sm:text-right text-white/70">{project.description}</p>
                         </div>
 
-                        <div className="flex justify-end gap-8 sm:gap-20 w-full mt-4">
-                            <a href={project.link} className="text-sm font-bold border-b-2 border-graybackground">Repo</a>
-                            <a href={project.link} className="text-sm font-bold border-b-2 border-graybackground">View Project</a>
+                        <div className="flex justify-end gap-8 sm:gap-20 w-full my-4">
+                            <LinkDisplay link={project.link} repoLink={project.repoLink} />
                         </div>
                     </div>
                 ))}

@@ -36,17 +36,17 @@ export default function Contact() {
                     <div className="flex flex-col  gap-5 w-fit text-left text-2xl text-white">
 
                         <h3 data-animation="fade-in">Socials</h3>
-                        <a href="/#" data-animation="fade-in" className="justify-between flex sm:text-5xl font-bold border-b border-white pb-2 :text-2xl :py-2 w-full">Github <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://github.com/Subatomi" data-animation="fade-in" className="justify-between flex sm:text-5xl font-bold border-b border-white pb-2 :text-2xl :py-2 w-full">Github <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
 
-                        <a href="/#" data-animation="fade-in" className="justify-between flex sm:text-5xl font-bold border-b border-white pb-2 :text-2xl :py-2 w-full">LinkedIn <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.linkedin.com/in/theodore-ladera-954bbb358/" data-animation="fade-in" className="justify-between flex sm:text-5xl font-bold border-b border-white pb-2 :text-2xl :py-2 w-full">LinkedIn <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
 
 
-                        <a href="/#" data-animation="fade-in" className=" justify-between flex sm:text-5xl font-bold border-b border-white pb-2">Facebook <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.facebook.com/LaderaTheo" data-animation="fade-in" className=" justify-between flex sm:text-5xl font-bold border-b border-white pb-2">Facebook <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
 
-                        <a href="/#" data-animation="fade-in" className="justify-between flex sm:text-5xl font-bold border-b border-white pb-2 text-2xl py-2 w-full">Email <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <a href="mailto:theodoreladera.tl@gmail.com" data-animation="fade-in" className="justify-between flex sm:text-5xl font-bold border-b border-white pb-2 text-2xl py-2 w-full" aria-label="Send email">Email <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
                     </div>
 

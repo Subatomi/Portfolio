@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react';
 
-const InitialPage = lazy(() => import('./pages/Loading/InitialPage'));
+// const InitialPage = lazy(() => import('./pages/Loading/InitialPage'));
 const Home = lazy(() => import('./pages/Home/Home'));
 const MyWorks = lazy(() => import('./pages/MyWorks/MyWork'));
 
@@ -12,8 +12,7 @@ export default function App() {
 
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/" element={<InitialPage />} />
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/MyWorks" element={<MyWorks />} />
           </Routes>
           </Suspense>

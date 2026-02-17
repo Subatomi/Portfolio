@@ -15,7 +15,7 @@ export default function TechStack() {
                 <div className="flex flex-col h-full justify-items-start">
                     <h1 data-animation="fade-in" className="text-5xl font-untitledSans font-bold text-left mb-10">About Me</h1>
 
-                    <p  data-animation="fade-in"  className="text-white/70">
+                    <p  data-animation="fade-in"  className="text-gray-400">
                         Hello! You can call me Theo. <br/><br/>
                         I’m a Computer Science student with interests in Web & Mobile Development and AI/Machine Learning. I face challenging problems and continuously improve my technical skills. I’m known for adapting quickly, learning efficiently, and staying persistent when faced with difficult tasks.<br/><br/>
 
@@ -25,20 +25,28 @@ export default function TechStack() {
                     </p>
                 </div>
 
-                <div className="flex flex-col h-fit justify-items-start mt-10 ">
+                <div className="flex flex-col h- w-full justify-items-start mt-10 ">
                     <h1 data-animation="fade-in" className="text-5xl font-untitledSans font-bold text-left mb-10">What I Strive For</h1>
                     <div className="flex flex-row flex-wrap justify-center">
-                        <div data-animation="slide-in-left" data-delay="0.8" className="flex flex-col gap-2 max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg mr-2 rotate-12 z-1">
-                            <h2 className="font-bold mb-2 text-center">Collaborative</h2>
-                            <p className="text-white/70">Strong team player and adaptability in collaborative environments.</p>
+                         <div data-animation="slide-in-left"  data-delay="0.8" >
+                            <div className="flex flex-col gap-2 max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg  rotate-12 z-1 hover:border-white/20 hover:-translate-y-1 hover:border-2">
+                                <h2 className="font-bold mb-2 text-center">Collaborative</h2>
+                                <p className="text-gray-400">Strong team player and adaptability in collaborative environments.</p>
+                            </div>
+                         </div>
+                        
+                        <div data-animation="slide-in-left"   data-delay="0.6" >
+                            <div  className="flex flex-col gap-2  max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg  z-2 -rotate-10 hover:border-white/20 hover:-translate-y-1 hover:border-2">
+                                <h2 className="font-bold mb-2 text-center">Problem Solver</h2>
+                                <p className="text-gray-400">Find solutions to complex problems and technical challenges.</p>
+                            </div>
                         </div>
-                        <div data-animation="slide-in-left"  data-delay="0.6" className="flex flex-col gap-2  max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg mr-2 z-2 -rotate-10">
-                            <h2 className="font-bold mb-2 text-center">Problem Solver</h2>
-                            <p className="text-white/70">Find solutions to complex problems and technical challenges.</p>
-                        </div>
-                        <div data-animation="slide-in-left"  data-delay="0.4" className="flex flex-col gap-2  max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10  border rounded-lg z-3 rotate-11">
-                            <h2 className="font-bold mb-2 text-center">Learner</h2>
-                            <p className="text-white/70">Continuously seeking knowledge and improving skills in various domains.</p>
+          
+                        <div data-animation="slide-in-left"  data-delay="0.4" >
+                            <div className="flex flex-col gap-2 max-w-50 max-h-60 h-full w-full px-5 py-10 backdrop-blur-sm bg-white/10 border-white/10 hover:border-white/20 hover:-translate-y-1 hover:border-2 border rounded-lg z-3 rotate-11">
+                                <h2 className="font-bold mb-2 text-center">Learner</h2>
+                                <p className="text-gray-400">Continuously seeking knowledge and improving skills in various domains.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
